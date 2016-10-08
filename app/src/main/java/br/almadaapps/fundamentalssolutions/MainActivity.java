@@ -2,20 +2,11 @@ package br.almadaapps.fundamentalssolutions;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.ThumbnailUtils;
-import android.opengl.ETC1;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -26,8 +17,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.List;
 
 import static java.lang.Math.pow;
 
@@ -208,7 +197,6 @@ public class MainActivity extends CommonActivity implements ListView.OnItemClick
             double ma = 0, mb = 0, qa = 0, qb = 0, l, a = 0, b = 0, q = 0, kqa = 0, kqb = 0, kma = 0, kmb = 0, kna = 0, knb = 0;
             try {
                 l = Double.parseDouble(etComprimento.getText().toString());
-
                 if (position < 9) {
                     q = Double.parseDouble(etCargaMomento.getText().toString());
                     if (position == 7 || position == 6) {
@@ -216,7 +204,6 @@ public class MainActivity extends CommonActivity implements ListView.OnItemClick
                         b = Double.parseDouble(etB.getText().toString());
                     }
                 }
-
                 switch (position) {
                     case 0:
                         ma = (q * pow(l, 2)) / 12;

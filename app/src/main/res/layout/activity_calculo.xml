@@ -28,78 +28,112 @@
         android:text="CALCULAR"
         android:theme="@style/ButtonOK" />
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_background_normal"
-        android:ems="5"
-        android:inputType="numberSigned|numberDecimal"
-        android:hint="a"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="13dp" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_background_normal"
-        android:ems="5"
-        android:inputType="numberSigned|numberDecimal"
-        android:hint="b"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/editText4"
-        android:layout_alignBottom="@+id/editText4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="36dp"
-        android:layout_marginEnd="36dp" />
-
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/p"
-        android:layout_below="@+id/editText"
+        android:id="@+id/iv_solucao_selecionada"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_background_normal"
-        android:ems="8"
-        android:inputType="numberSigned|numberDecimal"
-        android:hint="Comprimento"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:layout_below="@+id/editText4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_background_normal"
-        android:ems="5"
-        android:inputType="numberSigned|numberDecimal"
-        android:hint="Força"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/toolbar2"
-        android:layout_toRightOf="@+id/editText4"
-        android:layout_toEndOf="@+id/editText4" />
+        android:layout_margin="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/rha" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iv_solucao_selecionada">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_carga_momento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carga ou momento:"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/et_carga_momento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_comprimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comprimento:"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/et_comprimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:ems="10"
+                android:hint="m"
+                android:inputType="numberDecimal"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a:"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/et_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:ems="10"
+                android:hint="m"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="b:"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/et_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:ems="10"
+                android:hint="m"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
 </RelativeLayout>

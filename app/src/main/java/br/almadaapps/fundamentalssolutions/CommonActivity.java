@@ -2,8 +2,6 @@ package br.almadaapps.fundamentalssolutions;
 
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,13 +23,13 @@ public abstract class CommonActivity extends AppCompatActivity {
     }
 
     protected Integer[] getIdsImages() {
-        Integer[] ids = new Integer[15];
+        /*Integer[] ids = new Integer[15];
         ids[0] = R.drawable.d;
         ids[1] = R.drawable.drd;
         ids[2] = R.drawable.dre;
         ids[3] = R.drawable.pm;
         ids[4] = R.drawable.pmrd;
-        ids[5] = R.drawable.pmre;
+//        ids[5] = R.drawable.pmre;
         ids[6] = R.drawable.p;
         ids[7] = R.drawable.m;
         ids[8] = R.drawable.t;
@@ -41,7 +39,8 @@ public abstract class CommonActivity extends AppCompatActivity {
         ids[12] = R.drawable.rvb;
         ids[13] = R.drawable.rra;
         ids[14] = R.drawable.rrb;
-        return ids;
+        return ids;*/
+        return null;
     }
 
     protected List<Solucao> getSolucoes(){
@@ -63,6 +62,26 @@ public abstract class CommonActivity extends AppCompatActivity {
         aux.add(new Solucao(R.drawable.rra, ds[13]));
         aux.add(new Solucao(R.drawable.rrb, ds[14]));
         return aux;
+    }
+
+    protected int[] idsResults() {
+        return new int[]{
+                R.drawable.rd,
+                R.drawable.rdd,
+                R.drawable.rde,
+                R.drawable.rf,
+                R.drawable.rfd,
+                R.drawable.rfe,
+                R.drawable.rfab,
+                R.drawable.rm,
+                R.drawable.rqt,
+                R.drawable.rha,
+                R.drawable.rhb,
+                R.drawable.rva,
+                R.drawable.rvb,
+                R.drawable.rra,
+                R.drawable.rrb,
+        };
     }
 
     protected void showOnDialog(String resultado){
