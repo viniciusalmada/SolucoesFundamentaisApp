@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="solutions">
+        <item>Carga distribuida</item>
+        <item>Carga distribuida com rotula</item>
+    </string-array>
+
+    <string-array name="solutions_description">
+        <item>Força distribuída uniforme</item>
+        <item>Força distribuída uniforme e rótula à esquerda</item>
+        <item>Força distribuída uniforme e rótula à direita</item>
+        <item>Força concentrada centralizada</item>
+        <item>Força concentrada centralizada e rótula à esquerda</item>
+        <item>Força concentrada centralizada e rótula à direita</item>
+        <item>Força concentrada descentralizada</item>
+        <item>Momento concentrado descentralizado</item>
+        <item>Força distribuída linearmente</item>
+        <item>Recalque axial comprimindo à esquerda</item>
+        <item>Recalque axial tracionando à direita</item>
+        <item>Recalque transversal à esquerda</item>
+        <item>Recalque transversal à direita</item>
+        <item>Recalque rotacional à esquerda</item>
+        <item>Recalque rotacional à direita</item>
+    </string-array>
+</resources>
